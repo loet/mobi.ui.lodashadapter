@@ -8,6 +8,12 @@
   "description": "angular module providing lodash",
   "main": "src/lodashadapter.js",
   "license": "N/A",
+  "ignore": [
+    "./src/**/*.*",
+    "./*.*",
+    "./bower_components/**/*.*",
+    "./node_modules/**/*.*"
+  ],
   "devDependencies": {
     "lodash": "2.4.1",
     "angular": "1.2.21",
