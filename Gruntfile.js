@@ -9,7 +9,12 @@ module.exports = function (grunt) {
     grunt.initConfig(options);
 
     grunt.config.merge({
+        pkg: grunt.file.readJSON('package.json'),
         concat: {
+            options: {
+                stripBanners: true,
+                banner: '/* <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n\n'
+            },
             dist: {
                 src: '<%= config.src %>',
                 dest: '<%= config.dest %>'

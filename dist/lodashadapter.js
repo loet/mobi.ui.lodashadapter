@@ -1,3 +1,5 @@
+/* mobi.ui.lodashadapter - v0.0.1 - 2014-12-15 */
+
 angular.module('mobi.ui.lodashadapter', [
     'mobi.ui.lodashadapter.services'
 ]);
